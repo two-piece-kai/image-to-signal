@@ -22,7 +22,7 @@ The signal outputs itself into a .txt file in a folder labeled "output," created
 ### Transmission/Reception of Signal in Underwater Acoustics Lake Test
 ![image](https://github.com/user-attachments/assets/8aae262e-1c62-45cf-95c0-0d153d2f867c)
 
-This image is from a lake test that occured on Aug 6, 2024 recorded by our monitor hydrophone. Since this test, I have flipped the image so that the picture is facing the "right way", as well as inverted the frequency in order to show truer color values on our specific equipment -- here, it is not inversed and flipped.
+This image is from a lake test that occured on Aug 6, 2024 recorded by our monitor hydrophone. Since this test, I have flipped the image so that the picture is facing the "right way", as well as inverted the intensity in order to show truer color values on our specific equipment -- here, it is not inversed and flipped.
 
 You may notice a lot of noise bleeding into the adjacent frequency ranges -- this is primarily the signal echoing off of the side of our boat and right back to the hydrophone. Our transducer and monitor hydrophone were only a few feet apart, as the transmission was meant for an AUV 300 ft away.
 
