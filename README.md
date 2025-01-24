@@ -1,5 +1,7 @@
 # IMAGE-TO-SIGNAL PROGRAM
 ## Introduction / Method - turning images into sound
+(Thank you to Brodie Alexander for lecturing me about non-digital domain signal processing and demanding more color contrast.)
+
 This MATLAB script generates a digital (time-domain) signal from an image and modulates it for transmission using its signal processing library. It will ask too many questions.
 
 By nature, MATLAB creates a pixel matrix for an image with the chroma values. With known values for desired bandwidth, sampling rate, and center frequency, we can create a signal that displays the chosen image on a spectrogram. Here, we consider the image matrix as a multi-line column vector in the frequency domain.
@@ -24,7 +26,7 @@ The signal outputs itself into a .txt file in a folder labeled "output," created
 
 This image is from a lake test that occured on Aug 6, 2024 recorded by our monitor hydrophone. Since this test, I have flipped the image so that the picture is facing the "right way", as well as inverted the intensity in order to show truer color values on our specific equipment -- here, it is not inversed and flipped.
 
-You may notice a lot of noise bleeding into the adjacent frequency ranges -- this is primarily the signal echoing off of the side of our boat and right back to the hydrophone. Our transducer and monitor hydrophone were only a few feet apart, as the transmission was meant for an AUV 300 ft away.
+We found that the close-range transducer and hydrophone picked up many echoes from the boat hull.
 
 ## Benefits of Transmitting Frogs for Science?
 - Cute
