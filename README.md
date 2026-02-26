@@ -1,11 +1,11 @@
 # IMAGE-TO-SIGNAL PROGRAM
 ## Introduction / Method - turning images into sound
-(Thank you to Brodie Alexander for lecturing me about non-digital domain signal processing and demanding more color contrast.)
+(Thank you to Brodie Alexander for lecturing me and demanding more color contrast.)
 
-This MATLAB script generates a digital (time-domain) signal from an image and modulates it for transmission using its signal processing library. It will ask too many questions.
+This MATLAB script generates a digital (time-domain) signal from an image and modulates it for transmission using its signal processing library.
 
 By nature, MATLAB creates a pixel matrix for an image with the chroma values. With known values for desired bandwidth, sampling rate, and center frequency, we can create a signal that displays the chosen image on a spectrogram. Here, we consider the image matrix as a multi-line column vector in the frequency domain.
-- We grayscale and resize the image so that it looks good in the specified bandwidth, then increase the contrast inversely and logarithmically so that it shows better on our equipment (potentially not so well in MATLAB).
+- We grayscale and resize the image so that it looks good in the specified bandwidth, then increase the contrast inversely and logarithmically so that it shows better on our equipment.
 - We add negative space to the signal (zeros) based on the Nyquist rate, bandwidth, and center frequency in order to properly "place" the image in the correct frequency range.
 - If we consider the matrix as a signal in frequency steps with intensity values, we can convert it to time steps with frequency values by utilizing the inverse FFT filter, with a few intermediate steps.
 
@@ -32,8 +32,4 @@ We found that the close-range transducer and hydrophone picked up many echoes fr
 - Cute
 - Shows fish what the frogs look like
 - Educates native algae on the delights of bread
-- Learn how to operate the modem from the beginning of the modulation process to the transmission in the field
-- Image turned into sound!! Cool!!
-
-## Licensing?
-Do whatever you want.
+- Easy-to-use image modulation program that does not rely on rebuilding the signal manually, pixel-by-pixel.
